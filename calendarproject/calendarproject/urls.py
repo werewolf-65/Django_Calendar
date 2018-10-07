@@ -22,5 +22,7 @@ urlpatterns = [
     path('entry/<int:pk>',views.details,name="details"),
     path('admin/', admin.site.urls),
     #for Add
-    path('entry/add',views.add,name="add")
+    path('entry/add',views.add,name="add"),
+    #for delete
+    path('entry/delete/<int:pk>',views.delete,name="delete")
 ]

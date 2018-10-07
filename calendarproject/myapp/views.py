@@ -27,3 +27,8 @@ def add(request):
     else:
         form=EntryForm()
     return render(request,'myapp/form.html',{'form':form})
+def delete(request,pk):
+    if request.method=='DELETE':
+        entry=get_object_or_404(Entry,pk=pk)
+        entry.delete()
+    return HttpResponseRedirect('/')
