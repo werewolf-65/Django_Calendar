@@ -18,7 +18,6 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 LOGIN_REDIRECT_URL='/calendar'
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/2.1/howto/deployment/checklist/
-
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = 'zt&20mdwjql$y&c_1@b_9_&=-$g!#nuv2@p2w-dt+3(w&3%b6*'
 
